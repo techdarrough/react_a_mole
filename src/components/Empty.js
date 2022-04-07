@@ -16,4 +16,4 @@ const EmptySlot = (props) => {
   );
 };
 
-export default EmptySlot;
+export default EmptySlot

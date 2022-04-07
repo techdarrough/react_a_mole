@@ -1,13 +1,32 @@
+import { useState } from "react";
+import MoleHole from "./components/Molehole";
 
-import './App.css';
 
 export default function App() {
-  return (
-    <div className="App">
-    
-    </div>
-  );
+  let [score, setScore] = useState(0)
+
+  const createHill = () =>  {
+    let hills = []
+    let loops = 9
+    for(let i = 0; i < loops; i++) {
+      hills.push(<MoleHole key={i} setScore={setScore} score={score}/>)
+    } 
+    return (
+      <div>
+        { hills }
+      </div>
+    )
+  }
+return (
+  <div>
+    <h1>Weact-A-Mole</h1>
+    { score }
+    { createHill }
+  </div>
+);
 }
+
+
 
 
 

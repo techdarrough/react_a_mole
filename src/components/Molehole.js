@@ -8,12 +8,12 @@ import EmptySlot from "./Empty";
 const MoleHole = (props) => {
     let [theMole, setTheMole] = useState(false)
     const handleClick= (e) => {
-        props.setScore(props.score++)
+        props.setScore(props.score +1)
         setTheMole(false)
     }
     let displayMole = theMole ? <Mole setScore={props.setScore} toggle={setTheMole} handleClick={handleClick} /> : <EmptySlot toggle={setTheMole}/>;
     return (
-        <div>
+        <div style={{'display': 'inline-block', 'width': '30vw'}} >
             {displayMole}
         </div>
     )
@@ -21,3 +21,5 @@ const MoleHole = (props) => {
 
 
 }
+
+export default MoleHole
