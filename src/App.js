@@ -18,10 +18,10 @@ export default function App() {
     )
   }
 return (
-  <div>
+  <div style={{'textAlign':'center'}}>
     <h1>Weact-A-Mole</h1>
     { score }
-    { createHill }
+    { createHill()}
   </div>
 );
 }
