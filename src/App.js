@@ -19,8 +19,8 @@ export default function App() {
   }
 return (
   <div style={{'textAlign':'center'}}>
-    <h1>Weact-A-Mole</h1>
-    { score }
+    <h1 style={{'fontSize':'3.5em'}}>Weact-A-Mole</h1>
+     <p style={{'fontSize': '2.7em'}}> Current score: { score }</p>
     { createHill()}
   </div>
 );
